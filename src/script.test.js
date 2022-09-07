@@ -1,8 +1,6 @@
 const {
   sum,
   compileAndroidCode,
-  capitalize,
-  reverseString,
   calculator,
   caesarCipher,
   analyzeArray,
