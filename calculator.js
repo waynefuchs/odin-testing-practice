@@ -2,9 +2,10 @@
 //    add, subtract, divide, and multiply. Each of these functions should take
 //    two numbers and return the correct calculation.
 const calculator = {
-    add: (a, b) => {},
-    subtract: (a, b) => {},
-    divide: (a, b) => {},
-    multiply: (a, b) => {},
-  };
-  
+  add: (a, b) => a + b,
+  subtract: (a, b) => {},
+  divide: (a, b) => {},
+  multiply: (a, b) => {},
+};
+
+module.exports = calculator;
