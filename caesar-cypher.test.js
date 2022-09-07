@@ -7,18 +7,18 @@ test('caesar cipher wraps lower case correctly', () => {
 })
 
 test('caesar cipher wraps upper case correctly', () => {
-    const result = caesarCipher('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    const result = caesarCipher('ABCDEFGHIJKLMNOPQRSTUVWXYZ', 13);
     expect(result).toBe('NOPQRSTUVWXYZABCDEFGHIJKLM');
 })
 
 // b. Don’t forget to test keeping the same case.
 test('caesar cipher keeps the same case', () => {
-    const result = caesarCipher('The Quick Brown Fox Jumped Over The Lazy Dog');
+    const result = caesarCipher('The Quick Brown Fox Jumped Over The Lazy Dog', 13);
     expect(result).toBe('Gur Dhvpx Oebja Sbk Whzcrq Bire Gur Ynml Qbt');
 })
 
 // c. Don’t forget to test punctuation!
 test('caesar cipher ignores punctuation', () => {
-    const result = caesarCipher('!@#$%^&*()<>.,{}[]:;"\'/\\|~`🔥');
+    const result = caesarCipher('!@#$%^&*()<>.,{}[]:;"\'/\\|~`🔥', 13);
     expect(result).toBe('!@#$%^&*()<>.,{}[]:;"\'/\\|~`🔥');
 })
