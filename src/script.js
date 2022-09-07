@@ -11,8 +11,4 @@ function compileAndroidCode() {
 module.exports = {
   sum,
   compileAndroidCode,
-  reverseString,
-  calculator,
-  caesarCipher,
-  analyzeArray,
 };
