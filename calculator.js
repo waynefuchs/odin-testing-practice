@@ -3,9 +3,9 @@
 //    two numbers and return the correct calculation.
 const calculator = {
   add: (a, b) => a + b,
-  subtract: (a, b) => {},
-  divide: (a, b) => {},
-  multiply: (a, b) => {},
+  subtract: (a, b) => a-b,
+  divide: (a, b) => a/b,
+  multiply: (a, b) => a*b,
 };
 
 module.exports = calculator;
