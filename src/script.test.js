@@ -1,4 +1,12 @@
-const {sum, compileAndroidCode} = require("./script");
+const {
+  sum,
+  compileAndroidCode,
+  capitalize,
+  reverseString,
+  calculator,
+  caesarCipher,
+  analyzeArray,
+} = require("./script");
 
 test("adds 1 + 2 to equal 3", () => {
   expect(sum(1, 2)).toBe(3);
@@ -41,6 +49,7 @@ test("there is no I in team", () => {
   expect("team").not.toMatch(/I/); // ha ha
 });
 
+// Error testing
 test("compiling android goes as expected", () => {
   expect(() => compileAndroidCode()).toThrow();
   expect(() => compileAndroidCode()).toThrow(Error);
@@ -48,3 +57,5 @@ test("compiling android goes as expected", () => {
   expect(() => compileAndroidCode()).toThrow("you are using the wrong JDK");
   expect(() => compileAndroidCode()).toThrow(/JDK/);
 });
+
+
