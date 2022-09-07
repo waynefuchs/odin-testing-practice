@@ -2,3 +2,5 @@
 //    character “shifted”. Read more about how a Caesar cipher works on this
 //    website.
 function caesarCipher(str) {}
+
+module.exports = caesarCipher;
